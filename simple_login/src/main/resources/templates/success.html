@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+</head>
+<body>
+    <h3 style="color: limegreen" th:text="${success}"></h3>
+    <h2 th:text="${user.nickName}"></h2>
+    <h2 th:text="${user.name}"></h2>
+    <h2 th:text="${user.surName}"></h2>
+    <a href="/users/user_edit">User edit</a><br>
+    <a href="/users/updatepass_page">Change Password</a>
+
+</body>
+</html>

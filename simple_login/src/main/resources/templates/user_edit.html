@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Edit</title>
+</head>
+<body>
+    <form action="#" th:action="@{/users/update}" method="post">
+        <label>Enter Your new Nickname</label><br>
+        <input type="text" name="newNickName" th:value="${user.nickName}"><br><br>
+        <label>Enter Your new Name</label><br>
+        <input type="text" name="newName" th:value="${user.name}"><br><br>
+        <label>Enter Your new Surname</label><br>
+        <input type="text" name="newSurName" th:value="${user.surName}"><br><br>
+        <label>Enter Your new Age</label><br>
+        <input type="number" name="newAge" th:value="${user.age}"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

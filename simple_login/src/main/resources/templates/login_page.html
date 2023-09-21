@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<form action="#" th:action="@{/users/login}"  method="get">
+    <label th:if="${isFalseNickname}" th:text="'Nickname must be unique!!! Update failed'" style="color: red"></label>
+    <label th:text="${fail}" th:if="${isVisible}" style="color: red"></label><br><br>
+    <label>Enter your Nickname</label><br>
+    <input type="text" name="nickName"><br><br>
+    <label>Enter your Password</label><br>
+    <input type="text" name="password"><br><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+</body>
+</html>

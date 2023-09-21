@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Update</title>
+</head>
+<body>
+  <form action="#" th:action="@{/users/set-password}" method="post">
+      <label th:text="${passwrodFailMessage}" th:if="${isSuccesPassword}" style="color: red"></label><br><br>
+      <label>Enter your Password</label><br>
+      <input type="text" name="password"><br><br>
+      <label>Enter your New Password</label><br>
+      <input type="text" name="newPassword"><br><br>
+      <label>Enter your again New Password</label><br>
+      <input type="text" name="againNewPassword"><br><br>
+      <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
